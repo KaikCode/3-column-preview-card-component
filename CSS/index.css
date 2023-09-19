@@ -1,0 +1,52 @@
+/* SEDANS */
+.SEDANS {
+    background-color: var(--SEDANS-background);
+    border-radius: 10px 0 0 10px;
+}
+
+.btn {
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--SEDANS-background);
+}
+
+.btn:hover {
+    background-color: var(--SEDANS-background);
+    border: solid 3px white;
+    color: var(--PRIMARY-COLOR);
+    cursor: pointer;
+}
+
+/* SUVS */
+.SUVS {
+    background-color: var(--SUVS-background);
+}
+
+.btn2 {
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--SUVS-background);
+}
+
+.btn2:hover {
+    background-color: var(--SUVS-background);
+    border: solid 3px white;
+    color: var(--PRIMARY-COLOR);
+    cursor: pointer;
+}
+
+/* LUXURY */
+.LUXURY {
+    background-color: var(--LUXURY-background);
+    border-radius: 0 10px 10px 0;
+}
+
+.btn3{
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--LUXURY-background);
+}
+
+.btn3:hover {
+    background-color: var(--LUXURY-background);
+    border: solid 3px white;
+    color: var(--PRIMARY-COLOR);
+    cursor: pointer;
+}

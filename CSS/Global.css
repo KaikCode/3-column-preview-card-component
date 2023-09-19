@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --PRIMARY-COLOR: hsl(0, 0%, 95%);
+    --PARAGRAPH: hsla(0, 0%, 100%, 0.75);
+    --SEDANS-background: hsl(34, 100%, 50%);
+    --SUVS-background: hsl(184, 100%, 22%);
+    --LUXURY-background: hsl(159, 100%, 13%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    background-color: var(--PRIMARY-COLOR);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto 0 auto;
+}
+
+.SEDANS, .SUVS, .LUXURY {
+    width: 300px;
+}
+
+.SEDANS-CARD, .SUVS-CARD, .LUXURY-CARD {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 40px;
+}
+
+h1 {
+    color: var(--PRIMARY-COLOR);
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+img {
+    width: auto;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--PARAGRAPH);
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.btn, .btn2, .btn3 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    width: 135px;
+    padding: 10px;
+    margin-top: 70px;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+@media screen and (max-width: 833px) {
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .SUVS {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .LUXURY {
+        border-radius: 0;
+        margin-bottom: 5%;
+    }
+}
